@@ -96,31 +96,37 @@ function playRound(HumanChoice, ComputerChoice) {
 
 //playGame executes, starting the rounds
 
-function playGame() {
-    let humanScore = 0;
-    let computerScore = 0;
-    for(let i=0; i<5; i++) {
-        // playRound(humanSelection, computerSelection);
-        playRound(getHumanChoice(), getComputerChoice(0,2));
+// function playGame() {
+//     let humanScore = 0;
+//     let computerScore = 0;
+//     // for(let i=0; i<5; i++) {
+//     //     // playRound(humanSelection, computerSelection);
+//     //     playRound(getHumanChoice(), getComputerChoice(0,2));
 
-        if(roundFlag==1) {
-            humanScore++;
-            console.log(`Player: ${humanScore} Computer: ${computerScore}`)
-        } else {
-            computerScore++;
-            console.log(`Player: ${humanScore} Computer: ${computerScore}`)
-        }
-        // console.log("play game is working")
+//     //     if(roundFlag==1) {
+//     //         humanScore++;
+//     //         console.log(`Player: ${humanScore} Computer: ${computerScore}`)
+//     //     } else {
+//     //         computerScore++;
+//     //         console.log(`Player: ${humanScore} Computer: ${computerScore}`)
+//     //     }
+//     //     // console.log("play game is working")
 
-    }
+//     // }
 
-    console.log("humanScore: "+ humanScore + "computer Score: " + computerScore);
-    if(humanScore>computerScore) {
-        console.log("You Win!!! Play Again")
-    } else if(computerScore > humanScore) {
-        console.log("You Lost!!! Try Again")
-    } else {
-        console.log("Its a Tie!!!")
-    }
-}
-playGame();
+//     console.log("humanScore: "+ humanScore + "computer Score: " + computerScore);
+//     if(humanScore>computerScore) {
+//         console.log("You Win!!! Play Again")
+//     } else if(computerScore > humanScore) {
+//         console.log("You Lost!!! Try Again")
+//     } else {
+//         console.log("Its a Tie!!!")
+//     }
+// }
+// playGame();
+
+const rockBtn = document.querySelector('.Rock');
+const paperBtn = document.querySelector('.Paper')
+const scissorBtn = document.querySelector('.Scissors')
+
+rockBtn.addEventListener("click", playRound());
