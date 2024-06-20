@@ -1,0 +1,59 @@
+
+* {
+    margin: 0% 0;
+    padding: 0px;
+    background-color: rgb(146, 97, 32);
+}
+html, body {
+    height: 100%;
+}
+/* @font-face {
+    font-family: 'retro-custom';
+    src: url('/home/vboxuser/Downloads/prstartk.ttf') format('ttf'),
+    url('/home/vboxuser/Desktop/repos/OdinRepos/etch-a-sketch/prstartk.ttf')format('ttf');
+} */
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+  
+header {
+    color: rgb(242, 246, 5);
+    background-color: cadetblue;
+    font-family: "Bitstream Vera Serif Bold", serif;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    
+}
+section {
+    flex : 1;
+    padding: 10px;
+}
+.buttons {
+    padding: 10px;
+}
+#container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.grid-cell {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+footer {
+    height: fit-content;
+    color: whitesmoke;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+}
