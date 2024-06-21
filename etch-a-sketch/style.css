@@ -48,8 +48,12 @@ header {
 }
 .controls {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
+
+
 .resetBtn {
     padding: 20px;
     box-sizing: border-box;
@@ -62,6 +66,7 @@ header {
     cursor:auto;
 }
 
+/* grid section----------------------------------------------- */
 .grid {
     padding: 20px;
     display: flex;
@@ -80,8 +85,8 @@ header {
 
 .gridCell {
     border: 1px solid black;
-    width: calc(100% / 16);
-    height: calc(100% / 16);
+    width: calc(100% / 30);
+    height: calc(100% / 30);
     box-sizing: border-box;
     /* height: auto; */
     /* padding: 10px; */
@@ -93,6 +98,7 @@ header {
     background-color: var(--color-blue);
 }
 
+/* gridSection ends--------------------------------------------- */
 footer {
     height: fit-content;
     color: whitesmoke;
