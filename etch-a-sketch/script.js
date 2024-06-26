@@ -5,10 +5,10 @@ let drawing = true;
 
 const resetBtn = document.querySelector('.resetBtn');
 
-let grids = 16;
-function createGrid(grids) {
-    for(let i=0; i<grids; i++) {
-        for(let j=0; j<grids; j++) {
+let gridNos = 16;
+function createGrid(gridNos) {
+    for(let i=0; i<gridNos; i++) {
+        for(let j=0; j<gridNos; j++) {
             const cell = document.createElement('div');
             cell.classList.add('gridCell');
 
@@ -50,7 +50,9 @@ resetBtn.addEventListener('click', ()=> {
     while(gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.lastChild);
     }
-    createGrid();
     drawing = false;
+    createGrid();
+    
     // clickGrid();
 });
+

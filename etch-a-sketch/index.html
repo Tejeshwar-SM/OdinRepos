@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch!</title>
     <link rel="stylesheet" href="style.css" media="screen,print">
-    <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +17,11 @@
     <section class="container">
         <h1></h1>
         <div class="controls">
-            <input type="range" name="Grid Size" value="16" min="2" max="48">
+            <button class="rainbow">Rainbow Mode</button>
+            <div class="inputSize">8 x 8</div>
+            <div class="sliderContainer">
+                <input class="slider" type="range" min="2" max="48" value="16">
+            </div>
             <button class="resetBtn"> Reset Board </button>
         </div>
         
